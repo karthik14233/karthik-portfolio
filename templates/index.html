@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Karthik S | CSE (AI &amp; ML) Student, Python &amp; Automation</title>
+  <meta name="description" content="Portfolio of Karthik S, a B.Tech CSE (AI &amp; ML) student at Jain University who builds Python automation and small web projects.">
+  <meta name="theme-color" content="#0b1730">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='22' fill='%230b1730'/%3E%3Ctext x='50' y='66' font-size='52' text-anchor='middle' font-family='sans-serif' font-weight='700' fill='%235aa9ff'%3EK%3C/text%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Manrope:wght@500;700;800&family=Source+Sans+3:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+  <script>try{var t=localStorage.getItem("theme");if(t)document.documentElement.dataset.theme=t;}catch(e){}</script>
+</head>
+<body>
+  <a class="skip" href="#main">Skip to main content</a>
+  <div class="bg-glow" aria-hidden="true"></div>
+  <div class="orb orb1" aria-hidden="true"></div><div class="orb orb2" aria-hidden="true"></div><div class="orb orb3" aria-hidden="true"></div>
+
+  <header class="site-header">
+    <nav class="nav" aria-label="Main">
+      <a class="brand" href="#top">Karthik S</a>
+      <button class="icon-btn menu-btn" id="menuBtn" aria-expanded="false" aria-controls="navLinks" aria-label="Open menu">&#9776;</button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <button class="icon-btn" id="themeBtn" aria-label="Switch to light theme" aria-pressed="false">&#9680;</button>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section class="hero wrap" id="top">
+      <div class="hero-text">
+        <p class="kicker">B.Tech CSE (AI &amp; ML) student</p>
+        <h1>Hi, I'm Karthik S.</h1>
+        <p class="lead">CSE (AI &amp; ML) student who loves Python and automation.</p>
+        <p>I turn repetitive tasks into scripts and small web tools, and I'm learning machine learning to build more useful ones.</p>
+        <div class="actions">
+          <a class="btn primary" href="#projects">View projects</a>
+          <a class="btn" href="#contact">Contact me</a>
+        </div>
+        <ul class="stats">
+          <li><strong>4</strong><span>Projects</span></li>
+          <li><strong>Python</strong><span>Main language</span></li>
+          <li><strong>AI &amp; ML</strong><span>Learning focus</span></li>
+        </ul>
+      </div>
+      <figure class="code-card" aria-label="Python code sample from the File Organizer project">
+        <figcaption><i></i><i></i><i></i>organize.py</figcaption>
+<pre><code><span class="l c" style="--i:0"># sort a folder by file type</span><span class="l" style="--i:1"><span class="k">for</span> file <span class="k">in</span> folder.iterdir():</span><span class="l" style="--i:2">    category = <span class="f">categorize</span>(file)</span><span class="l" style="--i:3">    shutil.<span class="f">move</span>(file, target / category)<span class="cursor"></span></span></code></pre>
+      </figure>
+    </section>
+
+    <section class="section wrap" id="about">
+      <h2>About me</h2>
+      <p class="intro">I'm a B.Tech CSE (AI &amp; ML) student at Jain (Deemed-to-be) University. I enjoy using Python to automate repetitive tasks and build small web projects. I'm learning machine learning and aiming to become a developer who builds practical, useful tools.</p>
+      <div class="grid three">
+        <article class="card"><h3>Education</h3><p>B.Tech CSE (AI &amp; ML)<br>Jain (Deemed-to-be) University, Faculty of Engineering and Technology</p></article>
+        <article class="card"><h3>What I enjoy</h3><p>Automating routine work with Python and building small web projects that solve a real problem.</p></article>
+        <article class="card"><h3>Learning now</h3><p>Machine learning, with a foundation in statistics, probability and data analysis.</p></article>
+      </div>
+    </section>
+
+    <section class="section wrap" id="skills">
+      <h2>Skills</h2>
+      <div class="grid two">
+        <div class="card"><h3>Languages</h3><ul class="badges"><li>Python</li><li>HTML</li><li>CSS</li><li>JavaScript (basics)</li><li>SQL (basics)</li></ul></div>
+        <div class="card"><h3>Tools</h3><ul class="badges"><li>Git</li><li>GitHub</li><li>VS Code</li><li>Jupyter Notebook</li><li>Postman</li></ul></div>
+        <div class="card"><h3>Libraries and frameworks</h3><ul class="badges"><li>Flask</li><li>Pandas</li><li>NumPy</li><li>Matplotlib</li><li>Requests</li><li>BeautifulSoup</li></ul></div>
+        <div class="card"><h3>Concepts</h3><ul class="badges"><li>Automation</li><li>REST APIs</li><li>Web Scraping</li><li>Data Analysis</li><li>Statistics and Probability</li></ul></div>
+      </div>
+    </section>
+
+    <section class="section wrap" id="projects">
+      <h2>Projects</h2>
+      <div class="grid two">
+        <article class="card project">
+          <span class="ico" aria-hidden="true">🗂️</span>
+          <h3>File Organizer Automation</h3>
+          <p>Python script that sorts files in a folder into categories such as images, docs and videos.</p>
+          <ul class="badges small"><li>Python</li><li>os</li><li>shutil</li></ul>
+          <a class="link" href="https://github.com/username/file-organizer" target="_blank" rel="noopener noreferrer">View on GitHub<span class="sr"> (File Organizer Automation, opens in a new tab)</span></a>
+        </article>
+        <article class="card project">
+          <span class="ico" aria-hidden="true">⛅</span>
+          <h3>Weather Dashboard</h3>
+          <p>Fetches live weather from a free API and displays it in a simple dashboard.</p>
+          <ul class="badges small"><li>Python</li><li>Requests</li><li>HTML/CSS</li></ul>
+          <a class="link" href="https://github.com/username/weather-dashboard" target="_blank" rel="noopener noreferrer">View on GitHub<span class="sr"> (Weather Dashboard, opens in a new tab)</span></a>
+        </article>
+        <article class="card project">
+          <span class="ico" aria-hidden="true">📊</span>
+          <h3>Student Marks Analyzer</h3>
+          <p>Reads marks from a CSV and shows the average, the topper and a bar chart.</p>
+          <ul class="badges small"><li>Python</li><li>Pandas</li><li>Matplotlib</li></ul>
+          <a class="link" href="https://github.com/username/student-marks-analyzer" target="_blank" rel="noopener noreferrer">View on GitHub<span class="sr"> (Student Marks Analyzer, opens in a new tab)</span></a>
+        </article>
+        <article class="card project">
+          <span class="ico" aria-hidden="true">✅</span>
+          <h3>Personal To-Do Web App</h3>
+          <p>Add and delete tasks through a Flask backend with a SQLite database.</p>
+          <ul class="badges small"><li>Flask</li><li>HTML/CSS</li><li>SQLite</li></ul>
+          <a class="link" href="https://github.com/username/todo-app" target="_blank" rel="noopener noreferrer">View on GitHub<span class="sr"> (Personal To-Do Web App, opens in a new tab)</span></a>
+        </article>
+      </div>
+    </section>
+
+    <section class="section wrap" id="contact">
+      <h2>Contact</h2>
+      <div class="contact-grid">
+        <div>
+          <p class="intro">Have a question, an internship opportunity or an idea to build together? Send a message and I'll reply by email.</p>
+          <ul class="contact-list">
+            <li><a href="mailto:Karthik14235600@gmail.com">Karthik14235600@gmail.com</a></li>
+            <li><a href="https://github.com/username" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+            <li><a href="https://www.linkedin.com/in/username" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+          </ul>
+        </div>
+        <form id="contactForm" class="card form" novalidate>
+          <div class="field">
+            <label for="name">Name</label>
+            <input id="name" name="name" type="text" autocomplete="name" maxlength="80" required aria-describedby="name-err">
+            <p class="err" id="name-err" role="alert"></p>
+          </div>
+          <div class="field">
+            <label for="email">Email</label>
+            <input id="email" name="email" type="email" autocomplete="email" maxlength="120" required aria-describedby="email-err">
+            <p class="err" id="email-err" role="alert"></p>
+          </div>
+          <div class="field">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" maxlength="2000" required aria-describedby="message-err"></textarea>
+            <p class="err" id="message-err" role="alert"></p>
+          </div>
+          <div class="hp" aria-hidden="true">
+            <label for="website">Leave this field empty</label>
+            <input id="website" name="website" type="text" tabindex="-1" autocomplete="off">
+          </div>
+          <button class="btn primary" type="submit" id="sendBtn">Send message</button>
+          <p class="status" id="formStatus" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="wrap foot">
+      <p>&copy; <span id="year">2026</span> Karthik S</p>
+      <p>Visitors: <strong id="visits" aria-live="polite">...</strong></p>
+    </div>
+  </footer>
+
+  <script src="{{ url_for('static', filename='script.js') }}" defer></script>
+</body>
+</html>
